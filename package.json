@@ -1,0 +1,23 @@
+{
+  "name": "ts-fp-light",
+  "version": "1.0.0",
+  "description": "Functional Programming beginning using typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fp",
+    "typescript"
+  ],
+  "author": "limboer",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacker0limbo/ts-fp-light.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hacker0limbo/ts-fp-light/issues"
+  },
+  "homepage": "https://github.com/hacker0limbo/ts-fp-light#readme"
+}
