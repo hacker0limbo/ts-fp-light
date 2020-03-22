@@ -2,13 +2,23 @@
   "name": "ts-fp-light",
   "version": "1.0.0",
   "description": "Functional Programming beginning using typescript",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test",
+    "preversion": "npm run test",
+    "version": "npm run build && git add -A",
+    "postversion": "git push origin master"
   },
   "keywords": [
     "fp",
     "typescript"
+  ],
+  "files": [
+    "dist/**/*"
   ],
   "author": "limboer",
   "license": "ISC",
@@ -19,5 +29,13 @@
   "bugs": {
     "url": "https://github.com/hacker0limbo/ts-fp-light/issues"
   },
-  "homepage": "https://github.com/hacker0limbo/ts-fp-light#readme"
+  "homepage": "https://github.com/hacker0limbo/ts-fp-light#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.3",
+    "@types/node": "^13.7.4",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.2"
+  },
+  "dependencies": {}
 }

@@ -1,0 +1,19 @@
+  
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "module": "CommonJS",
+    "target": "ES5",
+    "declaration": true,
+    "outDir": "dist",
+    "alwaysStrict": true,
+    "noImplicitAny": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "test/**/*.ts"
+  ]
+}
