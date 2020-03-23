@@ -54,6 +54,7 @@ import {
   Partial,
   Compose,
   Pipe,
+  Curry,
   Equals,
   Params,
   Head,
