@@ -1,6 +1,6 @@
 {
   "name": "ts-fp-light",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Functional Programming beginning using typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,10 +8,7 @@
     "test": "jest",
     "build": "tsc",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run test",
-    "preversion": "",
-    "version": "git add -A",
-    "postversion": "git push origin master"
+    "prepublishOnly": "npm run test"
   },
   "keywords": [
     "fp",
