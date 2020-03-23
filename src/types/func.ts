@@ -3,6 +3,7 @@ export type Func<T extends any[], R> = (...a: T) => R
 export type __ = null | undefined
 
 /**
+ * Curry 类型
  * @reference 
  * https://stackoverflow.com/q/39432234/12733140
  * https://stackoverflow.com/q/51859461/12733140
@@ -23,6 +24,12 @@ export interface Curry3<T1, T2, T3, R> {
   (t1: T1): Curry2<T2, T3, R>;
   (t1: T1, t2: T2): Curry1<T3, R>;
   (t1: T1, t2: T2, t3: T3): R;
+}
+
+export interface Curry {
+  <T1, R>(fn: (t1: T1) => R): Curry1<T1, R>;
+  <T1, T2, R>(fn: (t1: T1, t2: T2) => R): Curry2<T1, T2, R>;
+  <T1, T2, T3, R>(fn: (t1: T1, t2: T2, t3: T3) => R): Curry3<T1, T2, T3, R>;
 }
 
 /**
